@@ -1,0 +1,10 @@
+langchain
+langchain-google-genai
+langchain-huggingface
+langchain-chroma
+pypdf
+pytest
+ruff
+python-dotenv
+streamlit
+sentence-transformers
