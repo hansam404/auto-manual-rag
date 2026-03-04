@@ -25,4 +25,4 @@ jobs:
         ruff format --check .
     - name: Run Pytest
       run: |
-        pytest tests/
+        python -m pytest tests/
