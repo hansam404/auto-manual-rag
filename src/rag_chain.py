@@ -15,8 +15,7 @@ def get_rag_chain():
     vector_store = Chroma(persist_directory=DB_DIR, embedding_function=embeddings)
     retriever = vector_store.as_retriever(search_kwargs={"k": 3})
     
-    llm = ChatGoogleGenerativeAI(model="gemini-pro", temperature=0)
-    
+    llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0)
     
     system_prompt = (
         "You are an expert automotive systems engineer. "
